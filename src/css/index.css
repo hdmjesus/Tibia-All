@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  height: 100px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header .header__title {
+  font-size: 2em;
+  width: 100%;
+  padding-left: 0.5em;
+}
+.header .header__title a {
+  list-style: none;
+  text-decoration: none;
+  color: #FFF704;
+  font-family: "Roboto Slab", serif;
+}
+.header nav {
+  display: none;
+}
+.header .header__menu--first-mobile {
+  display: initial;
+}
+.header .header__menu--first-mobile ul li {
+  list-style: none;
+  font-size: 2em;
+  margin-right: 1em;
+  color: #DDD862;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.article__card {
+  width: 100%;
+  background-color: #FEF0D6;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #E1E1E1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+}
+
+.article__search {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.article__search input {
+  margin: 0 auto;
+  margin-top: 20px;
+  min-width: 200px;
+  width: 80%;
+  border: none;
+  background-color: #FEF0D6;
+  border-bottom: 1px solid #707070;
+  outline: none;
+}
+
+::placeholder {
+  font-size: 0.8em;
+}
+
+.article__title {
+  width: 200px;
+  text-align: center;
+  background-color: #DDD862;
+  border-radius: 18px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.article__title h3 {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.article__skills {
+  height: 200px;
+}
+
+.skills__list {
+  margin: 40px auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  font-size: 0.8em;
+}
+
+label {
+  cursor: pointer;
+}
+label input[type=checkbox] {
+  display: inline-block;
+  width: 14px;
+  height: 19px;
+  margin: -1px 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.button--form {
+  min-width: 100px;
+  margin-bottom: 50px;
+  border: none;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  color: #fff;
+  background-color: #707070;
+}
+
+/*# sourceMappingURL=index.css.map */
