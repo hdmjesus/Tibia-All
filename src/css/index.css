@@ -4,4 +4,38 @@
   box-sizing: border-box;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  height: 100px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header .header__title {
+  font-size: 2em;
+  width: 100%;
+  padding-left: 0.5em;
+}
+.header .header__title a {
+  list-style: none;
+  text-decoration: none;
+  color: #FFF704;
+  font-family: "Roboto Slab", serif;
+}
+.header nav {
+  display: none;
+}
+.header .header__menu--first-mobile {
+  display: initial;
+}
+.header .header__menu--first-mobile ul li {
+  list-style: none;
+  font-size: 2em;
+  margin-right: 1em;
+  color: #DDD862;
+}
+
 /*# sourceMappingURL=index.css.map */

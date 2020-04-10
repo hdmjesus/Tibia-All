@@ -10,4 +10,42 @@ $yellow:#FFF704;
 $salmon:#FEF0D6;
 $gris-light:#E1E1E1;
 $gris-medium:#9F9D9D;
-$gris-dark:#9F9D9D;
+$gris-dark:#707070;
+$font-roboto:'Roboto',
+sans-serif;
+$font-robotoSlap:'Roboto Slab',
+serif;
+$shadonw-card: 0px 3px 6px #E1E1E1;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    .header__title {
+        font-size: 2em;
+        width: 100%;
+        padding-left: 0.5em;
+        a {
+            list-style: none;
+            text-decoration: none;
+            color: $yellow;
+            font-family: $font-robotoSlap;
+        }
+    }
+    nav {
+        display: none;
+    }
+    .header__menu--first-mobile {
+        display: initial;
+        ul li {
+            list-style: none;
+            font-size: 2em;
+            margin-right: 1em;
+            color: $gren-olive;
+        }
+    }
+}
