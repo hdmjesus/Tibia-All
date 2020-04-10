@@ -154,3 +154,36 @@
         color: $white;
         background-color: $gris-dark;
     }
+    
+    @media screen and (min-width:767px) {
+        .header {
+            justify-content: center;
+            .header__title {
+                font-size: 3em;
+            }
+            .header__menu--first-mobile {
+                display: none;
+            }
+        }
+        .container {
+            width: 60%;
+        }
+        .form {
+            font-size: 18px;
+        }
+        .article__card {
+            .article__title {
+                width: 300px;
+            }
+            input {
+                width: 60%;
+            }
+        }
+        .skills__list {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+        }
+        .button--form {
+            margin-bottom: 70px;
+        }
+    }
