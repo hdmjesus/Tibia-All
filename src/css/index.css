@@ -8,8 +8,11 @@ body {
   background-image: url(../images/wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 240vh;
   font-family: "Roboto", sans-serif;
+}
+
+.body-character {
+  height: 240vh;
 }
 
 body {
@@ -261,6 +264,11 @@ label input[type=checkbox] {
   font-size: 15px;
 }
 
+.character {
+  color: #FFF704;
+  font-weight: bold;
+}
+
 .information__title--skills,
 .information__title--level {
   display: flex;
@@ -310,6 +318,67 @@ label input[type=checkbox] {
   text-decoration: none;
   color: #fff;
   font-size: 0.9em;
+}
+
+@media screen and (min-width: 767px) {
+  .body-character {
+    height: auto;
+  }
+
+  .character__wrapper {
+    font-size: 20px;
+  }
+  .character__wrapper .information__title h2 {
+    font-size: 0.7em;
+  }
+
+  .deaths__wrapper,
+.rank__wrapper,
+.skills__wrapper {
+    font-size: 20px;
+  }
+
+  .rank__wrapper .information__title h2 {
+    font-size: 0.7em;
+  }
+
+  .information__details {
+    justify-content: center;
+  }
+  .information__details .propiedad {
+    line-height: 30px;
+    margin-right: 150px;
+  }
+  .information__details .valor {
+    line-height: 30px;
+  }
+
+  .information__character div {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 70%;
+    height: 40px;
+    align-items: center;
+  }
+
+  .information__character div p {
+    font-size: 0.9em;
+  }
+
+  .information__title--level,
+.information__title--skills {
+    justify-content: center;
+  }
+  .information__title--level p span,
+.information__title--skills p span {
+    margin-left: 170px;
+  }
+
+  .button {
+    line-height: 40px;
+    width: 150px;
+    height: 40px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
