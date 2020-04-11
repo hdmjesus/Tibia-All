@@ -189,3 +189,59 @@
     }
     
     // CHARACTER INDEX ---------------------
+    .character__wrapper {
+        font-size: 15px;
+        .information__title {
+            display: flex;
+            align-items: center;
+            height: 36px;
+            background-color: #505050;
+            color: $white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            h2 {
+                font-size: .8em;
+            }
+        }
+    }
+    
+    .botton__down {
+        margin-bottom: 30px;
+    }
+    
+    .information__description {
+        padding: 20px 20px;
+        .propiedad {
+            font-size: .9em;
+        }
+        .valor {
+            font-size: .9em;
+        }
+    }
+    
+    .information__title {
+        display: flex;
+        align-items: center;
+        height: 36px;
+        background-color: #505050;
+        color: $white;
+        padding: 10px;
+        border-radius: none;
+        h2 {
+            font-size: .8em;
+        }
+    }
+    
+    .information__details {
+        display: flex;
+        justify-content: space-around;
+        ul li {
+            list-style: none;
+        }
+    }
+    
+    .information__title--skills,
+    .information__title--level {
+        display: flex;
+        justify-content: space-around;
+    }
