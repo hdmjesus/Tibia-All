@@ -4,6 +4,14 @@
         box-sizing: border-box;
     }
     
+    body {
+        background-image: url(../images/wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 240vh;
+        font-family: 'Roboto', sans-serif;
+    }
+    
     $white: #fff;
     $gren-olive:#DDD862;
     $yellow:#FFF704;
@@ -70,6 +78,7 @@
         background-color: $salmon;
         border-radius: 10px;
         box-shadow: $shadonw-card;
+        margin-bottom: 40px;
     }
     
     .form {
@@ -203,19 +212,24 @@
                 font-size: .8em;
             }
         }
-    }
-    
-    .botton__down {
-        margin-bottom: 30px;
+        .information__description {
+            .valor {
+                text-align: left;
+            }
+        }
     }
     
     .information__description {
         padding: 20px 20px;
+        position: relative;
         .propiedad {
             font-size: .9em;
+            line-height: 20px;
         }
         .valor {
             font-size: .9em;
+            line-height: 20px;
+            text-align: center;
         }
     }
     
@@ -240,8 +254,72 @@
         }
     }
     
+    .deaths__wrapper {
+        font-size: 15px;
+        .information__description {
+            padding: 20px 0;
+            p {
+                text-align: center;
+                line-height: 30px;
+                font-size: .7em;
+            }
+        }
+    }
+    
+    .skills__wrapper {
+        font-size: 15px;
+    }
+    
+    .rank__wrapper {
+        font-size: 15px;
+    }
+    
     .information__title--skills,
     .information__title--level {
         display: flex;
         justify-content: space-around;
+    }
+    
+    .information__character div {
+        display: flex;
+        background-color: #D4C0A1;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        p {
+            font-size: .6em;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    
+    .rank__wrapper .information__details {
+        margin-bottom: 30px;
+    }
+    
+    .information__title--level,
+    .information__title--skills {
+        margin: 10px auto;
+        p {
+            color: rgb(58, 55, 55);
+            span {
+                color: $gris-dark;
+            }
+            ;
+        }
+    }
+    
+    .button {
+        background-color: $gris-dark;
+        border-radius: 10px;
+        height: 30px;
+        line-height: 30px;
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: .9em;
+        }
     }

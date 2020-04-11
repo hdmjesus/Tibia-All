@@ -5,6 +5,14 @@
 }
 
 body {
+  background-image: url(../images/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 240vh;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -58,6 +66,7 @@ body {
   background-color: #FEF0D6;
   border-radius: 10px;
   box-shadow: 0px 3px 6px #E1E1E1;
+  margin-bottom: 40px;
 }
 
 .form {
@@ -193,19 +202,22 @@ label input[type=checkbox] {
 .character__wrapper .information__title h2 {
   font-size: 0.8em;
 }
-
-.botton__down {
-  margin-bottom: 30px;
+.character__wrapper .information__description .valor {
+  text-align: left;
 }
 
 .information__description {
   padding: 20px 20px;
+  position: relative;
 }
 .information__description .propiedad {
   font-size: 0.9em;
+  line-height: 20px;
 }
 .information__description .valor {
   font-size: 0.9em;
+  line-height: 20px;
+  text-align: center;
 }
 
 .information__title {
@@ -229,10 +241,75 @@ label input[type=checkbox] {
   list-style: none;
 }
 
+.deaths__wrapper {
+  font-size: 15px;
+}
+.deaths__wrapper .information__description {
+  padding: 20px 0;
+}
+.deaths__wrapper .information__description p {
+  text-align: center;
+  line-height: 30px;
+  font-size: 0.7em;
+}
+
+.skills__wrapper {
+  font-size: 15px;
+}
+
+.rank__wrapper {
+  font-size: 15px;
+}
+
 .information__title--skills,
 .information__title--level {
   display: flex;
   justify-content: space-around;
+}
+
+.information__character div {
+  display: flex;
+  background-color: #D4C0A1;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.information__character div p {
+  font-size: 0.6em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.rank__wrapper .information__details {
+  margin-bottom: 30px;
+}
+
+.information__title--level,
+.information__title--skills {
+  margin: 10px auto;
+}
+.information__title--level p,
+.information__title--skills p {
+  color: #3a3737;
+}
+.information__title--level p span,
+.information__title--skills p span {
+  color: #707070;
+}
+
+.button {
+  background-color: #707070;
+  border-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=index.css.map */
