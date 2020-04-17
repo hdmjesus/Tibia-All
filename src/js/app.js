@@ -11,20 +11,39 @@ const $fishing = url.get("Fishing")
 
 
 const load = async() => {
-    const BASE_API = 'https://api.tibiadata.com/v2/characters/'
+    const API_DATA = 'https://api.tibiadata.com/v2/characters/'
 
 
-    async function getData() {
+    async function getData(url) {
 
-        const response = await fetch(`${BASE_API}${$character}.json`)
+        try {
+            const response = await fetch(`${url}${$character}.json`)
+            const { characters: { data } } = await response.json(`${url}${$character}.json`)
+            return data
 
-        const { characters: { data } } = await response.json(`${BASE_API}${$character}.json`) //cada await es una promesa
-
-        console.log(data)
+        } catch (err) {
+            const error = new Error(err)
+            console.log(error)
+        }
 
 
     }
-    getData()
+
+    function characterInfo() {
+        return `<ul>
+            <li>Krubyz</li>
+            <li>Male</li>
+            <li>Royal Paladin</li>
+            <li>340</li>
+            <li>306</li>
+            <li>Solidera</li>
+            <li>Roshamuul</li>
+            <li>Unstoppable</li>
+            <li>20,4,2020</li>
+            <li>Premiun Account</li>
+         </ul>`
+    }
+    const infoCharacter = getData(API_DATA)
 
 }
 
