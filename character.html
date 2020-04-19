@@ -17,7 +17,7 @@
 
     <header class="header">
         <figure class="header__logo">
-            <h1 class="header__title"><a href="">Tibia All</a></h1>
+            <h1 class="header__title"><a href="/index.html">Tibia All</a></h1>
         </figure>
 
         <nav class="header__menu--first-mobile">
@@ -62,75 +62,33 @@
                                         <li>Account status:</li>
                                     </ul>
                                 </div>
-                                <div class="valor">
-                                    <ul>
-                                        <li>Krubyz</li>
-                                        <li>Male</li>
-                                        <li>Royal Paladin</li>
-                                        <li>340</li>
-                                        <li>306</li>
-                                        <li>Solidera</li>
-                                        <li>Roshamuul</li>
-                                        <li>Unstoppable</li>
-                                        <li>20,4,2020</li>
-                                        <li>Premiun Account</li>
-                                    </ul>
+                                <div class="valor" id="infoCharacter">
+
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <article class="deaths__wrapper ">
+                    <article class="deaths__wrapper">
                         <div class="information__title">
                             <h2>Deaths</h2>
                         </div>
 
                         <div class="information__description">
-                            <div class="information__deads">
-                                <p class="information__dead--list">Apr-10-2020, Died at Level 341 by Cobra assesin</p>
-                                <p class="information__dead--list">Apr-10-2020, Died at Level 341 by Cobra assesin</p>
-                                <p class="information__dead--list">Apr-10-2020, Died at Level 341 by Cobra assesin</p>
-                                <p class="information__dead--list">Apr-10-2020, Died at Level 341 by Cobra assesin</p>
-                            </div>
-                        </div>
-                    </article>
+                            <div class="information__deads" id="deaths_container">
 
-                    <article class="skills__wrapper ">
-                        <div class="information__title">
-                            <h2>Skills</h2>
-                        </div>
 
-                        <div class="information__description">
-                            <div class="information__details">
-                                <div class="propiedad">
-                                    <ul>
-                                        <li>Magic level:</li>
-                                        <li>Distance:</li>
-                                        <li>Shielding:</li>
-                                    </ul>
-                                </div>
-                                <div class="valor">
-                                    <ul>
-                                        <li>20</li>
-                                        <li>114</li>
-                                        <li>70</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </article>
 
                     <article class="rank__wrapper">
-                        <div class="information__title">
-                            <h2>Rank Solidera</h2>
+                        <div class="information__title" id="rankserver">
+
                         </div>
 
                         <div class="information__description">
-                            <div class="information__character">
-                                <div>
-                                    <p> <span class="character">Krubyz</span> Level Rank: <strong>1000</strong> Distance Rank: <strong>400</strong></p>
-                                </div>
-                            </div>
+
 
                             <div class="information__top-level">
                                 <div class="information__title--level">
@@ -139,49 +97,32 @@
                                 </div>
                                 <div class="information__details">
                                     <div class="propiedad">
-                                        <ol>
-                                            <li>Tito el Bandido</li>
-                                            <li>Maurix Elvox</li>
-                                            <li>Neeik Soulfire</li>
-                                            <li>Miller</li>
-                                            <li>Enano Elvox</li>
+                                        <ol id="topLevelNameList">
+
                                         </ol>
                                     </div>
                                     <div class="valor">
-                                        <ul>
-                                            <li>896</li>
-                                            <li>824</li>
-                                            <li>811</li>
-                                            <li>805</li>
-                                            <li>804</li>
+                                        <ul id="topLevelList">
+
                                         </ul>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="information__top-skill">
-                                <div class="information__title--skills">
-                                    <p>Top 5 Distance</p>
-                                    <p> <span>Distance</span> </p>
+                                <div class="information__title--skills" id="rankskills-title">
+
                                 </div>
                                 <div class="information__details">
                                     <div class="propiedad">
-                                        <ol>
-                                            <li>Vames</li>
-                                            <li>Serious Warior</li>
-                                            <li>Dark Gloner</li>
-                                            <li>Tomoshikuta</li>
-                                            <li>Cyrion The Paladin</li>
+                                        <ol id="topSkillNameList">
+
                                         </ol>
                                     </div>
                                     <div class="
                                     valor">
-                                        <ul>
-                                            <li>130</li>
-                                            <li>128</li>
-                                            <li>127</li>
-                                            <li>127</li>
-                                            <li>127</li>
+                                        <ul id="topskill">
+
                                         </ul>
                                     </div>
                                 </div>
@@ -199,7 +140,7 @@
             </article>
         </section>
     </main>
-
+    <script src="src/js/app.js"></script>
 </body>
 
 </html>
