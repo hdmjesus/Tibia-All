@@ -9,10 +9,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Roboto", sans-serif;
+    height: 100vh;
 }
 
 .body-character {
-    height: 240vh;
+    height: 290vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-character-offdeath {
+    height: 180vh;
 }
 
 body {
@@ -80,9 +87,9 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    min-height: 350px;
+    min-height: 250px;
     height: auto;
-    justify-content: space-around;
+    justify-content: ;
     align-items: center;
     font-size: 16px;
 }
@@ -154,7 +161,7 @@ label input[type=checkbox] {
 
 .button--form {
     min-width: 100px;
-    margin-bottom: 20px;
+    margin-top: 50px;
     border: none;
     height: 30px;
     border-radius: 15px;
@@ -164,6 +171,9 @@ label input[type=checkbox] {
 }
 
 @media screen and (min-width: 767px) {
+    .section {
+        margin-top: 100px;
+    }
     .header {
         justify-content: center;
     }
@@ -190,7 +200,7 @@ label input[type=checkbox] {
         grid-gap: 15px;
     }
     .button--form {
-        margin-bottom: 70px;
+        margin-top: 50px;
     }
 }
 
