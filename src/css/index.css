@@ -274,7 +274,8 @@ label input[type=checkbox] {
 }
 
 .deaths__wrapper .information__description p {
-    text-align: center;
+    text-align: left;
+    margin: 0px 2% 0px 15%;
     line-height: 30px;
     font-size: 0.7em;
 }
@@ -368,6 +369,9 @@ label input[type=checkbox] {
     }
     .rank__wrapper .information__title h2 {
         font-size: 0.7em;
+    }
+    .information__description {
+        font-size: 20px;
     }
     .information__details {
         justify-content: center;

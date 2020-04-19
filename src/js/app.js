@@ -88,7 +88,7 @@ const load = async() => {
 
         function deathTemplate(muerte) {
 
-            return `<p class="information__dead--list">${muerte.date.date} ${muerte.reason.replace("Died",`Died at Level ${muerte.level}`)} </p>`
+            return `<p class="information__dead--list">${muerte.reason.replace("Died",`Died at Level ${muerte.level}`)} </p>`
     
         }
 
