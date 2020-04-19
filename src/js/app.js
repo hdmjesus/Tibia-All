@@ -45,11 +45,11 @@ const load = async() => {
 
         function rankPlayerTemplate(player) {
             return (`
-                    <p> <span class="character">${player.name}</span> Level Rank: <strong>1000</strong> Distance Rank: <strong>400</strong></p>
+                    <p> <span class="character">${player.name}</span></p
                 `)
         }
 
-        function serverRank(info) {
+        function serverRankTemplate(info) {
             return ` <h2>Rank ${info}</h2>`
 
         }
@@ -135,13 +135,9 @@ const load = async() => {
         }
     }
 
-    function renderPlayerRank(character,$container) {
-        let htmlSting=rankPlayerTemplate(character)
-        $container.innerHTML=htmlSting
-        
-    }
+   
     function renderServerRank(world,$container) {
-        let htmlSting=serverRank(world)
+        let htmlSting=serverRankTemplate(world)
         $container.innerHTML =htmlSting
        
     }
@@ -172,8 +168,7 @@ const load = async() => {
         let topFive=5
         let nameSkills=[]
         
-        console.log(skills)
-        for (let player = 0; player <topFive; player++) {
+         for (let player = 0; player <topFive; player++) {
                  
             let objeto=skills[player]
             nameSkills.push(objeto)
@@ -264,7 +259,7 @@ const load = async() => {
 
     renderCharacter(infoCharacter, $characterContainer)
     renderDeaths(deaths, $deaths_container)
-    renderPlayerRank(infoCharacter,$rankPlayer)
+    
     renderServerRank(server,$rankServer)
     rendeTopLevels($topLevelNameList,"name")
     rendeTopLevels($topLevelList,"level")
